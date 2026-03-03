@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>LOGIN</title>
 </head>
 <body>
@@ -14,13 +15,25 @@
 
             <section class="login-section">
                 <div class="login-card">
+                    <header>
+                        <h1>
+                            Hospital São Julião
+                        </h1>
+                    </header>
                     <form>
                         <label for="email">Email</label>
                         <input type="email" id="email" placeholder="exeplo@gmail.com" >
                         <label for="senha">Senha</label>
                         <input type="password" id="senha" placeholder="senha" required>
+                        <label for = "termos">
+                            <input type="checkbox">
+                            Não sou um robô
+                        </label>
 
                         <button type="submit">ENTRAR</button>
+                        <p>
+                            Ao continuar,você está de acordo com os Termos de Uso e ciente da Politica de Privacidade
+                        </p>
                     </form>
                 </div>
             </section>
