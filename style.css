@@ -11,9 +11,10 @@ body{
 .login-container{
     display: flex;
     background-color: aliceblue;
-    justify-content: center; /*centraliza horizontal*/
+    justify-content: space-between; /*centraliza horizontal*/
     align-items: center; /* centraliza vertical*/
     height: 100vh;
+    padding: 0 80px;
 }
 .login-card{
     background-color: white;
@@ -30,4 +31,12 @@ gap: 12px;
 }
 input{
     padding: 8px;
+}
+.card-image{
+    
+    width: 900px;
+    height: 850px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
 }
