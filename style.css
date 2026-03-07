@@ -10,18 +10,20 @@ body{
 }
 .login-container{
     display: flex;
-    background-color: aliceblue;
+    background-color: white;
     justify-content: space-between; /*centraliza horizontal*/
     align-items: center; /* centraliza vertical*/
     height: 100vh;
     padding: 0 80px;
-}
 .login-card{
-    background-color: white;
+    background-color: aliceblue;
     padding: 30px;
     width: 350px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 250px;
+    border: 2px solid #ccc;
+}
 }
 
 form{
@@ -38,5 +40,28 @@ input{
     height: 850px;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 150px;
+    border: 2px solid black;
+
+}
+header{
+    display: flex;
+    align-items:center;
+    gap: 10px;
+}
+.logo-image{
+    width: 40px;
+    height: auto;
+}
+h1{
+    margin: 0;
+}
+.checkbox{
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
 
 }
