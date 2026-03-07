@@ -1,70 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
+<title>Dashboard Hospital</title>
 
-        html, body{
-        height: 70%;
-        margin: 5%;
-    }
-
-    body{
-        background-image: url("./images/saojuliao.png");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-    .conteudo{
-        color: black;
-        padding: 50px;
-        font-size: 24px;
-    }
-    
-    body{
-        margin:0;
-    }
-    /* barra lateral */
-    .sidebar{
-        width:200px;
-        height:70vh;
-        background-color:#1b6259;
-        padding:20px;
-    }
-
-/* botões da barra */
-    .sidebar button{
-        width:100%;
-        padding:10px;
-        margin-bottom:20px;
-        border:none;
-        background-color:#10b981;
-        color:white;
-        cursor:pointer;
-    }
-
+<style>
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#1b6259;
+}
+.container{
+    display:flex;
+}
+.sidebar{
+    width:220px;
+    height:100vh;
+    background:#1f6f63;
+    padding:20px;
+}
+.sidebar button{
+    width:100%;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:12px;
+    margin-bottom:15px;
+    border:none;
+    border-radius:6px;
+    background:#10b981;
+    color:white;
+    font-size:15px;
+    cursor:pointer;
+}
+.sidebar button:hover{
+    background:#0ea371;
+}
+.conteudo{
+    flex:1;
+    padding:40px;
+}
+.area-central{
+    max-width:900px;
+    margin:auto;
+}
+.titulo{
+    font-size:40px;
+    color:white;
+    margin-bottom:30px;
+}
+.cards{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:40px;
+}
+.card{
+    background:#10b981;
+    color:white;
+    padding:20px 40px;
+    border-radius:10px;
+    font-size:20px;
+    box-shadow:0px 4px 10px rgba(0,0,0,0.2);
+}
+.mapa{
+    text-align:center;
+    color:white;
+    font-size:20px;
+}
+.mapa img{
+    margin-top:10px;
+    border-radius:12px;
+    box-shadow:0px 6px 15px rgba(0,0,0,0.3);
+}
 </style>
 
 </head>
+
 <body>
+
+    <div class="container">
+
     <div class="sidebar">
 
-        <button><img src="images/seta.png" width="15" height="15">  Visão Geral</button>
-        <button><img src="images/paciente.png" width="15" height="15">  Pacientes</button>
-        <button><img src="images/cadastro.png" width="15" height="15">  Cadastro/pavilhão</button>
-        <button><img src="images/relatorio.png" width="15" height="15">  Relatorios</button>
-        <button><img src="images/carro.png" width="15" height="15">  Transporte</button>
-        <button><img src="images/limpesa.png" width="15" height="15">  Limpesa</button>
-        <button><img src="images/usuario.png" width="15" height="15">  Usuarios</button>
-        <button><img src="images/leitos.png" width="15" height="15">  leitos</button>
-        <button><img src="images/sair.png" width="15" height="15">  Sair</button>
-
+        <button><img src="images/seta.png" width="20"> Visão Geral</button>
+        <button><img src="images/paciente.png" width="20"> Pacientes</button>
+        <button><img src="images/cadastro.png" width="20"> Cadastro/Pavilhão</button>
+        <button><img src="images/relatorio.png" width="20"> Relatórios</button>
+        <button><img src="images/carro.png" width="20"> Transporte</button>
+        <button><img src="images/limpesa.png" width="20"> Limpeza</button>
+        <button><img src="images/usuario.png" width="20"> Usuários</button>
+        <button><img src="images/leitos.png" width="20"> Leitos</button>
+        <button><img src="images/sair.png" width="20"> Sair</button>
 
     </div>
+
+    <div class="conteudo">
+
+    <div class="area-central">
+
+    <h2 class="titulo">Visão Geral</h2>
+
+    <div class="cards">
+
+        <div class="card">12 Leitos</div>
+        <div class="card">03 Leitos</div>
+        <div class="card">15 Leitos</div>
+
+    </div>
+
+    <div class="mapa">
+
+        Mapa do Hospital <br>
+
+        <img src="images/saojuliao.png" width="650">
+
+    </div>
+
+</div>
+
+</div>
+
+</div>
 
 </body>
 </html>
